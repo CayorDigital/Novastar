@@ -27,27 +27,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-image: url(images/background.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;">
+<body>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="page-add" viewBox="0 0 20 20">
             <path fill="currentColor"
                 d="M4 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5.207A5.5 5.5 0 0 0 14.5 9a5.5 5.5 0 0 0-3.163 1H7.5a.5.5 0 0 0 0 1h2.757a5.48 5.48 0 0 0-1.254 3.675A5.48 5.48 0 0 0 10.257 18H6a2 2 0 0 1-2-2zm8.5 2h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1m2 13a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m0-7a.5.5 0 0 1 .5.5V14h1.5a.5.5 0 0 1 0 1H15v1.5a.5.5 0 0 1-1 0V15h-1.5a.5.5 0 0 1 0-1H14v-1.5a.5.5 0 0 1 .5-.5" />
-        </symbol>
-        <symbol id="multiple-pages" viewBox="0 0 24 24">
-            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                <path d="M1.992 19h3m3 0h-3m0 0v-3m0 3v3M7 2h9.5L21 6.5V19" />
-                <path
-                    d="M11 22h5.5a1.5 1.5 0 0 0 1.5-1.5V8.749a.6.6 0 0 0-.176-.425l-3.148-3.148A.6.6 0 0 0 14.25 5H4.5A1.5 1.5 0 0 0 3 6.5V13" />
-                <path d="M14 5v3.4a.6.6 0 0 0 .6.6H18" />
-            </g>
-        </symbol>
-        <symbol id="pages" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm4.075-4.75L12 14.475l2.925 1.775l-.775-3.325l2.6-2.25l-3.425-.275L12 7.25l-1.325 3.15l-3.425.275l2.6 2.25z" />
         </symbol>
         <symbol id="contact" viewBox="0 0 14 14">
             <path fill="currentColor" fill-rule="evenodd"
@@ -198,47 +183,163 @@ background-size: cover;">
         </div>
     </nav>
 
-    <section id="hero" class="padding-medium">
+    <section id="hero" class="padding-medium position-relative">
         <div class="container-fluid padding-side text-white">
-            <div class="d-none d-lg-block position-absolute bottom-0 end-0">
-                <img src="images/banner-img.png" alt="img" class="img-fluid">
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center d-lg-none" data-aos="fade-up" data-aos-duration="1400">
-                    <img src="images/banner-img.png" alt="img" class="img-fluid">
-                </div>
-                <div class="col-lg-6 ms-lg-5">
-                    <h1 class="banner-size fw-medium display-1 my-4" data-aos="fade-up" data-aos-duration="1600">
-                        Hi, I'm Natalie<span class="text-primary"> Full-Stack Developer & Problem Solver </span>
+            <div class="row gap-5 flex-column align-items-center">
+                <div class="col-lg-9">
+                    <h1 class="banner-size fw-medium display-1" data-aos="fade-up" data-aos-duration="1200">
+                        About me <span class="text-primary"> Natalie </span>
                     </h1>
-                    <p class="fs-5" data-aos="fade-up" data-aos-duration="1600">
-                        I craft seamless digital experiences with clean, efficient, and scalable code. Let's build something amazing together.
+                    <p class="fs-4 fst-italic my-4" data-aos="fade-up" data-aos-duration="1400">
+                        Turning Ideas into Functional & Scalable Solutions
                     </p>
-                    <a href="portfolio.html" class="btn rounded-pill button text-white mt-4 position-relative pe-5"
-                        data-aos="fade-up" data-aos-duration="1600">
-                        <span> Explore My Work </span>
-                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                            <svg class="arrow-right text-white p-1" width="28" height="28">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
+                    <p data-aos="fade-up" data-aos-duration="1400">
+                        With a passion for coding and an eye for design, I specialize in developing high-performance web applications. From front-end magic to back-end logic, I create solutions that are user-friendly, responsive, and secure.
+                    </p>
+                    <div class="process-content container mt-5" data-aos="fade-up" data-aos-duration="1400">
+                        <div id="counter" class="row justify-content-center ">
+                            <div class="col-lg-3 col-6 ">
+                                <div class="d-flex align-items-center">
+                                    <h4 class="counter-value text-primary fw-bold display-3 banner-size"
+                                        data-count="25">14</h4><span class="text-primary display-5">+</span>
+                                </div>
+                                <p class="text-uppercase mb-0">years experience</p>
+                            </div>
+                            <div class="col-lg-3 col-6 ">
+                                <div class="d-flex align-items-center">
+                                    <h4 class="counter-value text-primary fw-bold display-3 banner-size"
+                                        data-count="390">360</h4><span class="text-primary display-5">+</span>
+                                </div>
+                                <p class="text-uppercase mb-0">Satisfied clients</p>
+                            </div>
+                            <div class="col-lg-3 col-6 ">
+                                <div class="d-flex align-items-center">
+                                    <h4 class="counter-value text-primary fw-bold display-3 banner-size"
+                                        data-count="550">700</h4><span class="text-primary display-5">+</span>
+                                </div>
+                                <p class="text-uppercase mb-0">Projects done</p>
+                            </div>
+                            <div class="col-lg-3 col-6 ">
+                                <h4 class="counter-value text-primary fw-bold display-3 banner-size" data-count="15">30
+                                </h4>
+                                <p class="text-uppercase mb-0">Winning awards </p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
+                <div class="col-lg-9">
+                    <div class="mt-5" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="mt-4">
+                            <div class="about-info mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                <h3 class="display-3 mb-4">Skills</h3>
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3">
+                                        <h4 class="display-6">Frontend</h4>
+                                        <p>HTML, CSS, JavaScript (React, Vue, Svelte)</p>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <h4 class="display-6">Backend</h4>
+                                        <p>Node.js, Express, Python (Django, Flask)</p>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <h4 class="display-6">Database</h4>
+                                        <p>MySQL, PostgreSQL, MongoDB</p>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <h4 class="display-6">Tools</h4>
+                                        <p>Git, Docker, AWS, Firebase</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                <h3 class="display-3 mb-4">Experience</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Creative Agency Inc.: Design head</h4>
+                                        <p class="text-primary mb-1">2007 - 2012</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Studio Alpha.: Project Manager</h4>
+                                        <p class="text-primary mb-1">2013 - present</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Creative Agency Inc.: Design head</h4>
+                                        <p class="text-primary mb-1">2007 - 2012</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Studio Alpha.: Project Manager</h4>
+                                        <p class="text-primary mb-1">2013 - present</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                <h3 class="display-3 mb-4">Education</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Bachelors in Engineering in Information Technology</h4>
+                                        <p class="text-primary mb-1">1990 - 1994</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Masters in Data Analysis</h4>
+                                        <p class="text-primary mb-1">1994 - 1996</p>
+                                        <p>Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam
+                                            nesciunt
+                                            facilis!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                <h3 class="display-3 mb-4">Interest</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Photography</h4>
+                                        <p>Capturing moments that inspire creativity.</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Sketching</h4>
+                                        <p>Pen and paper concepts before digital execution.</p>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <h4 class="display-6">Traveling</h4>
+                                        <p>Exploring cultures and landscapes to fuel design ideas.</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
     <nav id="side-nav" class="navbar-side p-3 p-lg-3 me-lg-5 text-center" data-bs-theme="dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">
+                <a class="nav-link " aria-current="page" href="index.html">
                     <svg width="24" height="24">
                         <use xlink:href="#home"></use>
                     </svg>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.html">
+                <a class="nav-link active" href="about.html">
                     <svg width="24" height="24">
                         <use xlink:href="#person"></use>
                     </svg>
@@ -291,6 +392,7 @@ background-size: cover;">
             </li>
         </ul>
     </nav>
+
 
     <!-- script ================================================== -->
     <script src="js/jquery-1.11.0.min.js"></script>

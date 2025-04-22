@@ -27,27 +27,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-image: url(images/background.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;">
+<body>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="page-add" viewBox="0 0 20 20">
             <path fill="currentColor"
                 d="M4 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5.207A5.5 5.5 0 0 0 14.5 9a5.5 5.5 0 0 0-3.163 1H7.5a.5.5 0 0 0 0 1h2.757a5.48 5.48 0 0 0-1.254 3.675A5.48 5.48 0 0 0 10.257 18H6a2 2 0 0 1-2-2zm8.5 2h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1m2 13a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m0-7a.5.5 0 0 1 .5.5V14h1.5a.5.5 0 0 1 0 1H15v1.5a.5.5 0 0 1-1 0V15h-1.5a.5.5 0 0 1 0-1H14v-1.5a.5.5 0 0 1 .5-.5" />
-        </symbol>
-        <symbol id="multiple-pages" viewBox="0 0 24 24">
-            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                <path d="M1.992 19h3m3 0h-3m0 0v-3m0 3v3M7 2h9.5L21 6.5V19" />
-                <path
-                    d="M11 22h5.5a1.5 1.5 0 0 0 1.5-1.5V8.749a.6.6 0 0 0-.176-.425l-3.148-3.148A.6.6 0 0 0 14.25 5H4.5A1.5 1.5 0 0 0 3 6.5V13" />
-                <path d="M14 5v3.4a.6.6 0 0 0 .6.6H18" />
-            </g>
-        </symbol>
-        <symbol id="pages" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm4.075-4.75L12 14.475l2.925 1.775l-.775-3.325l2.6-2.25l-3.425-.275L12 7.25l-1.325 3.15l-3.425.275l2.6 2.25z" />
         </symbol>
         <symbol id="contact" viewBox="0 0 14 14">
             <path fill="currentColor" fill-rule="evenodd"
@@ -198,31 +183,51 @@ background-size: cover;">
         </div>
     </nav>
 
-    <section id="hero" class="padding-medium">
+    <section id="hero" class="padding-medium position-relative">
         <div class="container-fluid padding-side text-white">
-            <div class="d-none d-lg-block position-absolute bottom-0 end-0">
-                <img src="images/banner-img.png" alt="img" class="img-fluid">
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center d-lg-none" data-aos="fade-up" data-aos-duration="1400">
-                    <img src="images/banner-img.png" alt="img" class="img-fluid">
-                </div>
-                <div class="col-lg-6 ms-lg-5">
-                    <h1 class="banner-size fw-medium display-1 my-4" data-aos="fade-up" data-aos-duration="1600">
-                        Hi, I'm Natalie<span class="text-primary"> Full-Stack Developer & Problem Solver </span>
+            <div class="row flex-column gap-5 align-items-center">
+                <div class="col-lg-9    ">
+                    <h1 class="banner-size fw-medium display-1 mb-4" data-aos="fade-up" data-aos-duration="1200">
+                        Let’s work <span class="text-primary">Together</span>
                     </h1>
-                    <p class="fs-5" data-aos="fade-up" data-aos-duration="1600">
-                        I craft seamless digital experiences with clean, efficient, and scalable code. Let's build something amazing together.
-                    </p>
-                    <a href="portfolio.html" class="btn rounded-pill button text-white mt-4 position-relative pe-5"
-                        data-aos="fade-up" data-aos-duration="1600">
-                        <span> Explore My Work </span>
-                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                            <svg class="arrow-right text-white p-1" width="28" height="28">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
+                    <p data-aos="fade-up" data-aos-duration="1400">
+                        Bringing your ideas to life with clean, efficient, and scalable code. </p>
+                </div>
+                <div class="col-lg-9 mt-2" data-aos="fade-up" data-aos-duration="1400">
+                    <form id="contactForm" action="contact.php" method="post" class="form-group contact-form row">
+                        <div class="col-lg-6 mb-4">
+                            <input type="text" name="name" placeholder="Full Name*"
+                                class="form-control bg-white rounded-2 border-0 w-100 ps-4 py-3" required="">
                         </div>
-                    </a>
+                        <div class="col-lg-6 mb-4">
+                            <input type="email" name="email" placeholder="Email*"
+                                class="form-control bg-white rounded-2 border-0 w-100 ps-4 py-3" required="">
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <input type="number" name="phone" placeholder="Phone"
+                                class="form-control bg-white rounded-2 border-0 w-100 ps-4 py-3">
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <input type="text" name="subject" placeholder="Subject"
+                                class="form-control bg-white rounded-2 border-0 w-100 ps-4 py-3">
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                            <textarea name="message" placeholder="Message"
+                                class="form-control bg-white rounded-2 border-0 w-100 ps-4 py-3" rows="4"
+                                required=""></textarea>
+                        </div>
+                        <div class="">
+                            <button type="submit" name="submit"
+                                class="btn rounded-pill button text-white mt-4 position-relative pe-5">
+                                <span> Let’s Talk </span>
+                                <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                    <svg class="arrow-right text-white p-1" width="28" height="28">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -231,7 +236,7 @@ background-size: cover;">
     <nav id="side-nav" class="navbar-side p-3 p-lg-3 me-lg-5 text-center" data-bs-theme="dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">
+                <a class="nav-link " aria-current="page" href="index.html">
                     <svg width="24" height="24">
                         <use xlink:href="#home"></use>
                     </svg>
@@ -259,7 +264,7 @@ background-size: cover;">
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">
+                <a class="nav-link active" href="contact.html">
                     <svg width="24" height="24">
                         <use xlink:href="#contact"></use>
                     </svg>
